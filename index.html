@@ -1,32 +1,598 @@
-<!-- Unit 5 Project
+<!--
 Requirements
-[  ] <div> and <span>
-[  ] height: and width:
-[  ] margin: and padding: 
+[  ] Two Different Headlines
+[  ] Bold and Italic Text
+[  ] One List
 [  ] Three Images
 
 Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Flexbox
-[ no ] Feature 2 - Flip Card
-[ no ] Feature 3 - Navbar
-[ no ] Feature 4 - Shaking Animation
-[ no ] Feature 5 - Gradient Background
-[ no ] Feature 6 - Spotify Playlist
+[ no ] Feature 1 - Include at least three emojis
+[ no ] Feature 2 - Include <font> tag
+[ no ] Feature 3 - Include Underline & Highlight
+[ no ] Feature 4 - Use Square Bullets
+[ no ] Feature 5 - Include a list within a list
 -->
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
 
-<head>
-  <title>Unit 5 Project</title>
-  <meta charset="utf-8">
-  <style>
+    <title>Unit 1 Project</title>
 
-  </style>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Fjalla+One&family=Gideon+Roman&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
- 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
 
-</body>
+    <style>
+      body {
+        background-image: url(https://img.freepik.com/free-photo/3d-grunge-room-interior-with-spotlight-smoky-atmosphere-background_1048-11333.jpg);
+        background-size: cover;
+        background-repeat: repeat;
+        width: 100%;
+        margin: auto;
+      }
+      
+       .knav{
+          background-color: none;
+          margin-left: 1000px;
+        }
+
+      p {
+        font-family: "Gideon Roman", serif !important;
+      }
+
+      h1 {
+        font-size: 50px;
+      }
+      h3 {
+        font-size: 30px;
+      }
+      #res {
+        color: white;
+      }
+
+      html {
+        height: 400%;
+      }
+
+      .bio {
+        color: white;
+      }
+
+      h1 {
+        color: white !important;
+      }
+
+      #dance {
+        color: white;
+      }
+      #email {
+        color: white;
+      }
+      img {
+        border: 5px solid white;
+        border-radius: 30px;
+      }
+
+      a:hover {
+        background-color: none;
+        color: grey;
+      }
+
+      h3 {
+        color: white;
+      }
+
+      #chanel {
+        background-color: none;
+        text-align: right;
+        margin-right: 0%;
+      }
+
+      a {
+        font-size: 18px;
+      }
+
+      a {
+        margin: 8px;
+      }
+
+      #move {
+        background-color: none;
+        text-align: right;
+        margin-right: 20%;
+      }
+
+      .flips { display: flex;
+     justify-content: space-around;
+       
+      }
+
+      .nob {border: none;
+            border-radius: 0px;}
+      
+      
+      
+      .vi {
+        background-color: none;
+        text-align: right;
+        margin-right: 0%;
+      }
+
+      #top {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #picquo {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #size {
+        font-size: 40px;
+      }
+
+      .ins {
+        font-size: 25px;
+      }
+
+      table {
+        color: #beb9b3;
+      }
+
+      .ani {
+        animation-duration: 15s;
+        animation-name: slide-in;
+      }
+
+      #size {
+        font-family: "Fjalla One", sans-serif !important;
+        font-weight: 1000;
+      }
+
+      @keyframes slide-in {
+        from {
+          translate: 150vw 0;
+          scale: 200% 1;
+        }
+
+        to {
+          translate: 0 0;
+          scale: 100% 1;
+        }
+      }
+
+      /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+      .flip-card {
+        background-color: transparent;
+        width: 350px;
+        height: 350px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      }
+
+      /* This container is needed to position the front and back side */
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      /* Do an horizontal flip when you move the mouse over the flip box container */
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      /* Position the front and back side */
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+      }
+
+      /* Style the front side (fallback if image is missing) */
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+      }
+
+      /* Style the back side */
+      .flip-card-back {
+        background-color: black;
+        color: grey;
+        transform: rotateY(180deg);
+      }
+    </style>
+  </head>
+  <body class="bio">
+   
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">     
+<div class="navbar navbar-inverse">
+        <div class="container-fluid">
+     <div class="row"> 
+                <div class="col-lg-12">
+
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-target="#mobile_menu" data-toggle="collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> 
+                        <a href="#" class="navbar-brand">Keith-Allen Hinds</a>
+                    </div>
+                  
+                  
+                  
+
+                    <div class="navbar-collapse collapse knav" id="mobile_menu">
+                        <ul class="nav navbar-nav">
+                          
+                          
+                          
+                          
+                             <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">About
+                               </a>
+<!--                               <li class="active"><a href="#">Resume</a></li> -->
+                            </li>
+                            <li><a href="#">Choreography</a></li>
+                            <li><a href="#">Action Shots</a></li>
+                            <li><a href="#">Inspiration</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav">
+                            <li>
+                           
+                            </li>
+                        </ul>
+                            
+                
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>                            
+  
+    
+    
+    
+    <br />
+    <br />
+    <br />
+    <br />
+    <div id="picquo">
+      <img
+        class="ani"
+        src="https://cdn.glitch.global/462f1d07-d53c-452f-aea9-fda3938ecf2a/IMG_20241007_154147.jpg?v=1728488336895"
+        width="500"
+      />
+      
+      
+      
+      <div id="move">
+        <h2 id="size" class="ani">
+          The creative process is not controlled
+          <br />by a switch you can simply turn on or off; <br />
+          it's with you all the time. -Alvin Ailey
+        </h2>
+      </div>
+    </div>
+    <h3 id="me">About Me</h3>
+
+    <p>
+      Keith-Allen is a talented and dynamic performer with a passion for various
+      types of dance such as Contemporary, Jazz, Ballet, Modern, Vogue, Tap,
+      Hip-Hop and more. He is especially passionate about choreographing and
+      being a choreographer. With five years of experience, he has captivated
+      audiences with the fluidity, dynamics, and emotion he brings to both his
+      dancing and choreography.
+    </p>
+
+    <br />
+    <br />
+    <p>
+      Keith is currently training at Fiorello H. LaGuardia High School and is in
+      his 2nd year as a Young Professional at <strong>MOVE|NYC|</strong>. He has
+      also trained at Alvin Ailey, Ballet Hispánico, and more recently The
+      Juilliard School. He has trained with notable teachers such
+    </p>
+
+    <ul>
+      <li>Shay Bland</li>
+      <li>Greg Lau</li>
+      <li>Genessy Castillo</li>
+      <li>Milton Myers</li>
+      <li>Risa Steinberg</li>
+      <li>Terese Capucilli</li>
+      <li>Adrienne Hurd,</li>
+      <li>Rodney Hamilton,</li>
+      <li>Branndi Lewis,</li>
+      <li>Fredrick Earl Mosley</li>
+      <li>and many more.</li>
+    </ul>
+    both refining his craft and expanding his artistic range. He has performed
+    at St. George Theatre, Connelly Theater, and most notably,
+    <strong><mark> New York City Center for Dance Against Cancer</mark></strong
+    >, earning acclaim for his versatility, emotional depth, and stage presence.
+    <br />
+    <br />
+
+    <p>
+      Dedicated to continuous growth, Keith-Allen embraces every opportunity to
+      inspire and connect with audiences. He also has a musical theater
+      background, and has performed in the show
+      <em>Legally Blonde the Musical</em> and <em>Chicago the musical</em> with
+      Kidztheater. Outside of performing, he enjoys strength training, attending
+      performances, and choreographing, all of which bring a rich and diverse
+      perspective to his work.
+    </p>
+
+    <a
+      target="_blank"
+      href="https://docs.google.com/document/d/1LOILPueEVcge7AwBFSp0tyyPUSAWuxhg/edit?usp=sharing&ouid=117472795734423186005&rtpof=true&sd=true"
+    >
+      <h3 id="resume">Resume</h3>
+    </a>
+
+    <h3 id="dancing">Dancing</h3>
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://youtube.com/embed/C9Evi4v3dHM"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    >
+    </iframe>
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/tEzVJ6rP7Uk?si=yv6mm3RsFFeb9lw5"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    >
+    </iframe>
+
+    <h3>Choreography</h3>
+
+    <p>
+      Choreography is the intricate art and science of designing and arranging
+      movements, often within the context of dance, to create a cohesive and
+      expressive performance. It encompasses a multitude of elements, including
+      rhythm, dynamics, and spatial relationships, which dancers navigate to
+      convey emotion, narrative, or thematic depth. Choreographers employ a
+      variety of techniques, blending styles from classical ballet to
+      contemporary forms, often drawing inspiration from diverse cultural
+      traditions, visual arts, and personal experiences. The process involves
+      not only the physical articulation of movement but also a profound
+      understanding of musicality and the interplay between dancers, which can
+      transform a simple sequence into a powerful visual narrative.
+      Additionally, effective choreography requires a keen awareness of the
+      audience's perception, enabling the artist to evoke emotional responses
+      and create a shared experience that transcends the mere execution of
+      steps. Through careful structuring and innovative improvisation,
+      choreography serves as a medium for storytelling, pushing the boundaries
+      of human expression and connecting individuals across time and space.
+    </p>
+    <br />
+
+    <p>
+      For me personally I see myself pursuing choreography and creatin because
+      it allows me to explore the deep, complex aspects of humanity through
+      movement. It’s a powerful medium for expressing emotions, struggles, and
+      triumphs in a way that words alone can’t capture. The process of creating
+      dance feels like bringing real-life experiences to life, whether through
+      subtle gestures or bold, expansive movements. Each step, each transition
+      tells a story, reflecting the rawness and beauty of human existence.
+      Choreography is a unique language that gives us the space to process,
+      understand, and communicate our shared experiences, connecting us in a
+      deeply personal yet universal way.
+    </p>
+    <h3>My Choreography</h3>
+    <iframe
+      width="560"
+      height="315"
+      src="https://cdn.glitch.me/462f1d07-d53c-452f-aea9-fda3938ecf2a/XRecorder_Edited_05102024_210123~2.mp4?v=1728488576810"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <h3 id="photos">Action Shots</h3>
+
+    <img
+      src="https://cdn.glitch.global/462f1d07-d53c-452f-aea9-fda3938ecf2a/IMG_20240726_162250_499.jpg?v=1727292419153"
+      width="400"
+    />
+    <img
+      src="https://cdn.glitch.global/3a8e3494-4251-4786-8b3e-7622212d2fff/IMG_20240728_185840_026.webp?v=1727293104976"
+      width="400"
+    />
+    <img
+      src="https://cdn.glitch.global/462f1d07-d53c-452f-aea9-fda3938ecf2a/Screenshot_20240304-211130~2.png?v=1727292406028"
+      width="400"
+    />
+
+    <h3 id="ins">Inspirations</h3>
+
+    
+    
+    
+    <div class="flips">
+      
+      
+      
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img class="nob"
+                  src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQyRQYtSlyDXba0Zta_MThxGhkLfWlkFiSzhkJybt272caHsbXw"
+                  alt="Avatar"
+                  style="width: 350px; height: 350px"
+                />
+              </div>
+              <div class="flip-card-back">
+                <h1>Parris Goebel</h1>
+                <p>New Zealand dancer and choreographer</p>
+              </div>
+            </div>
+          </div>
+      
+      
+    
+       
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img class="nob"
+                    src="https://vaildance.org/wp-content/uploads/2024/02/KaylaMack-SIR-Headshot.jpg"
+                    alt="Avatar"
+                    style="width: 350px; height: 350px"
+                  />
+                </div>
+                <div class="flip-card-back">
+                  <h1>Kayla Mak</h1>
+                  <p>Dancer</p>
+                </div>
+              </div>
+            </div>
+      
+      
+      
+    </div>
+    
+    
+    
+  
+    <br><br><br>
+    
+    
+    
+    <table>
+      <thead>
+        <tr>
+          <th>People I look up to <br /></th>
+          <th>Why? <br /></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+       <td class="ins">Parris Goebel<br /><br /><br /></td>
+
+        
+
+          <td class="ins">Kayla Mak<br /><br /><br /></td>
+
+         
+        </tr>
+        <tr>
+          <td>
+            Parris Goebel is an extraordinary choreographer and creator,
+            renowned for her innovative approach to dance that blends various
+            styles and cultural influences. Her ability to tell compelling
+            stories through movement captivates audiences worldwide. Parris has
+            choreographed for major artists like Justin Bieber and Janet
+            Jackson, showcasing her versatility and unique vision. As the
+            founder of the dance crew ReQuest, she has pushed the boundaries of
+            contemporary dance, inspiring countless performers. Her attention to
+            detail, passion for expression, and commitment to elevating dance as
+            an art form make her a powerful force in the industry, constantly
+            redefining what choreography can achieve.
+          </td>
+
+          <td>
+            Kayla Mak is an exceptional dancer and artist whose talent
+            transcends traditional boundaries. Her versatility allows her to
+            seamlessly blend various styles, from contemporary to hip-hop,
+            resulting in a captivating and fluid movement vocabulary. Kayla's
+            performances are marked by a profound emotional depth, engaging
+            audiences with her expressive storytelling. As a choreographer, she
+            exhibits a keen understanding of rhythm and musicality, crafting
+            intricate sequences that highlight both technical precision and raw
+            artistry. Her dedication to pushing the envelope of dance innovation
+            has made her a prominent figure in the industry, inspiring countless
+            aspiring dancers to explore their creative potential.
+          </td>
+        </tr>
+        <tr>
+          <th><br /></th>
+          <th><br /></th>
+        </tr>
+        <br />
+        <br />
+        <tr>
+          <th>Goebel's Choreography</th>
+          <th>Mak's Dancing</th>
+        </tr>
+        <tr>
+          <th><br /></th>
+          <th><br /></th>
+        </tr>
+
+        <tr>
+          <td>
+            <center>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/Dh-ULbQmmF8?si=fNianW4nUlOTRn9i"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </center>
+          </td>
+          
+          <br><br><br><br><br><br>
+          <td>
+            <center>
+              <iframe
+                class="vi"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/O7EWVFIVhxg?si=Pn4aw_wBhGmsuFIg"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </center>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br /><br />
+
+    <h3 id="contact">Contact</h3>
+    <h3 id="email">EMAIL: Keithhinds2008@gmail.com</h3>
+    <br />
+  </body>
 </html>
