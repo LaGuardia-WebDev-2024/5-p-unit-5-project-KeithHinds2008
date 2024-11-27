@@ -9,6 +9,16 @@
       body {
         font-family: Verdana, sans-serif;
       }
+      
+      
+      
+      body {
+        background-image: url(https://cdn.glitch.global/8be7def9-7790-4c6a-a9df-87527e962e47/IMG_0048.jpeg?v=1732719801532);
+        background-size: cover;
+        background-repeat: repeat;
+      }
+      
+      
       .mySlides {
         display: none;
       }
@@ -73,6 +83,9 @@
           opacity: 1;
         }
       }
+      
+      h1 {color: white;
+        font-size: 30px;}
 
       /* On smaller screens, decrease text size */
       @media only screen and (max-width: 300px) {
@@ -80,11 +93,70 @@
           font-size: 11px;
         }
       }
+      .top-left {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        color: white;
+      }
+          #glow {
+  font-size: 60px;
+  color: grey;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+      
+  
+      
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px white, 0 0 40px white, 0 0 50px black, 0 0 60px black, 0 0 70px black;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px white, 0 0 40px white, 0 0 50px black, 0 0 60px black, 0 0 70px black, 0 0 80px black;
+  }
+}
+     
+
+      
+      a:link {
+  color: white;
+  background-color: none;
+  text-decoration: underline;
+      }
+  
+    a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}    
+        
+        
     </style>
   </head>
   <body>
     
-    <a href="subpage.html">About Me</a>
+    <div id="glow"><a href="subpage.html">Keith-Allen Hinds</a>
+   <center><h1 id="back">
+        (Click Above)
+      </h1></center>  
+    </div>
+
     
     
     
@@ -102,7 +174,7 @@
           style="width: 100%"
         />
       </div>
-      
+
       <div class="mySlides fade">
         <img
           src="https://cdn.glitch.global/8be7def9-7790-4c6a-a9df-87527e962e47/IMG_20241125_183913.jpg?v=1732639247336"
